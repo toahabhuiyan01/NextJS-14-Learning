@@ -1,8 +1,12 @@
+"use client"
+import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
 const RegisterPage = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+
+    const router = useRouter()
 
     const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setEmail(e.target.value);
@@ -14,6 +18,8 @@ const RegisterPage = () => {
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+
+        router.push('/')
         // Add your registration logic here
     };
 
