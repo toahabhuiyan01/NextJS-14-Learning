@@ -1,0 +1,25 @@
+{
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "editor.formatOnSave": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    "eslint.format.enable": true,
+    "files.eol": "\n",
+    "eslint.lintTask.enable": true,
+    "typescript.tsdk": "node_modules/typescript/lib"
+}
