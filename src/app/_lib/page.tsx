@@ -4,7 +4,7 @@ const MyComponent = () => {
         <div>
             <h1>Hello, World!</h1>
         </div>
-    );
-};
+    )
+}
 
-export default MyComponent;
+export default MyComponent

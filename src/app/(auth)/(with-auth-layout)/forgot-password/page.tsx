@@ -1,17 +1,17 @@
-"use client"
-import React, { useState } from 'react';
+'use client'
+import React, { useState } from 'react'
 
 const ForgotPassword: React.FC = () => {
-    const [email, setEmail] = useState('');
+    const [email, setEmail] = useState('')
 
     const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setEmail(e.target.value);
-    };
+        setEmail(e.target.value)
+    }
 
     const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
+        e.preventDefault()
         // TODO: Implement password reset logic here
-    };
+    }
 
     return (
         <div>
@@ -28,7 +28,7 @@ const ForgotPassword: React.FC = () => {
                 <button type="submit">Reset Password</button>
             </form>
         </div>
-    );
-};
+    )
+}
 
-export default ForgotPassword;
+export default ForgotPassword

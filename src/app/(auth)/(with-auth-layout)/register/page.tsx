@@ -1,27 +1,27 @@
-"use client"
-import { useRouter } from 'next/navigation';
-import { useState } from 'react';
+'use client'
+import { useRouter } from 'next/navigation'
+import { useState } from 'react'
 
 const RegisterPage = () => {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
 
     const router = useRouter()
 
     const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setEmail(e.target.value);
-    };
+        setEmail(e.target.value)
+    }
 
     const handlePasswordChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setPassword(e.target.value);
-    };
+        setPassword(e.target.value)
+    }
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
+        e.preventDefault()
 
         router.push('/')
         // Add your registration logic here
-    };
+    }
 
     return (
         <div>
@@ -38,7 +38,7 @@ const RegisterPage = () => {
                 <button type="submit">Register</button>
             </form>
         </div>
-    );
-};
+    )
+}
 
-export default RegisterPage;
+export default RegisterPage

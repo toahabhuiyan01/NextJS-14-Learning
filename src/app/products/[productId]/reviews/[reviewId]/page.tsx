@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation"
+import { notFound } from 'next/navigation'
 type ReviewType = {
     params: {
         reviewId: string
